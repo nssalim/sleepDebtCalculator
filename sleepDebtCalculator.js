@@ -1,7 +1,7 @@
 // Sleep Debt Calculator
 // A person can accumulate sleep debt when they have not had enough sleep.
 
-// Determine a peson's  actual and ideal hours of sleep for each night (from the past week).
+// Determine a person's  actual and ideal hours of sleep for each night (from the past week).
 
 // To calculate how far a person is from their weekly sleep goal (hours).
 
@@ -35,3 +35,13 @@ const getSleepHours = day => {
     }
   };
   
+  // Find total sleep hours a person actually slept
+  // implicit return (no {})
+  const getActualSleepHours = () => 
+    getSleepHours('Monday') +
+    getSleepHours('Tuesday') +
+    getSleepHours('Wednesday') +
+    getSleepHours('Thursday') +
+    getSleepHours('Friday') +
+    getSleepHours('Saturday') +
+    getSleepHours('Sunday')
