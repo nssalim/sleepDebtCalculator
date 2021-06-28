@@ -18,7 +18,7 @@ const getSleepHours = day => {
       case 'Wednesday':
         return 7
         break;
-      case 'Thurday':
+      case 'Thursday':
         return 4
         break;
       case 'Friday':
@@ -44,4 +44,13 @@ const getSleepHours = day => {
     getSleepHours('Thursday') +
     getSleepHours('Friday') +
     getSleepHours('Saturday') +
-    getSleepHours('Sunday')
+    getSleepHours('Sunday');
+  
+  
+  // Test getSleepHours and getActualSleepHours functions
+  console.log(getSleepHours('Monday'));
+  // Output
+  // 8
+  console.log(getActualSleepHours());
+  // Output
+  // 48
