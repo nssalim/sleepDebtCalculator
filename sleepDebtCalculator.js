@@ -46,11 +46,19 @@ const getSleepHours = day => {
     getSleepHours('Saturday') +
     getSleepHours('Sunday');
   
+  // Find ideal sleep hours that the person prefers (per week)
+  const getIdealSleepHours = () => {
+    let idealHours = 8;
+    return idealHours * 7;
+  };
   
-  // Test getSleepHours and getActualSleepHours functions
-  console.log(getSleepHours('Monday'));
+  // Test getSleepHours, getActualSleepHours and getIdealSleepHours functions
+  console.log('Sleep hours on Monday: ' + getSleepHours('Monday'));
   // Output
-  // 8
-  console.log(getActualSleepHours());
+  // Sleep hours on Monday: 8
+  console.log('Actual sleep hours for week: ' + getActualSleepHours());
   // Output
-  // 48
+  // Actual sleep hours for week: 48
+  console.log('Ideal sleep hours for week: ' + getIdealSleepHours());
+  // Output
+  // Ideal sleep hours for week: 56
